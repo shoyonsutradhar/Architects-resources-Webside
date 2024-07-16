@@ -45,6 +45,7 @@
 .section-title {
   font-size: 2.8rem;
   font-weight: 700;
+  margin-top: 140px;
 }
 /* --------same fact relative styles --------*/
 .fact-card{
@@ -154,6 +155,28 @@
 }
 
 
+/* responser relative styles----------- */
+.sponsor-info{
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+/*------------------ sesponser company------------ */
+.sponser-company{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  margin-top: 100px;
+
+}
+.sponser-company img{
+  filter: grayscale(100%);
+/* ------------------footer section ----------------*/
+
+
+
+
+
+
 /* -----------Responsive Media Query ----------------*/
 @media screen and (max-width: 576px) {
   .navber,
@@ -161,14 +184,26 @@
   .nav-links {
     flex-direction: column;
   }
-  .teams-image-container {
+  .teams-image-container,
+  .facts-container,
+  .sponser-company{
     grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  .facts-container{
+    justify-items: center;
+    gap: 24px;
+  }
+  .sponser-company{
+    justify-items: center;
+    gap: 20px;
   }
   .our-features {
     margin-left:100px;
   }
 
 }
+
 /* medium size devise */
 @media screen and (min-width:576px)and (max-width:992px){
   .teams{
