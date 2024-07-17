@@ -183,7 +183,8 @@
 .footer-description{
   color: rgb(66, 66, 66);
   font-size: 20px;
-  font-weight: 400;  
+  font-weight: 400;
+  border-radius: 8px;  
   text-align: center;
   padding-top: 40px;
 
